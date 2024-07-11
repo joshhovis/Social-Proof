@@ -10,8 +10,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
-- Live Site URL: [Add live site URL here](joshhovis.github.io/Social-Proof/)
+- Solution URL: [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
+- Live Site URL: [Live Site URL](joshhovis.github.io/Social-Proof/)
 
 ### Built with
 
