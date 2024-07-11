@@ -30,41 +30,41 @@
                 <p class="rating-item-text">Rated 5 Stars in BestTech</p>
             </div>
         </div>
-    </div>
 
-    <!-- REVIEW -->
-    <div class="review">
-        <div class="review-item">
-            <div class="review-item-header">
-                <img class="review-item-image" src="./assets/images/image-colton.jpg" alt="Colton Smith profile picture">
-                <div class="review-item-text-container">
-                    <p class="review-item-name">Colton Smith</p>
-                    <p class="review-item-verified">Verified Buyer</p>
+        <!-- REVIEW -->
+        <div class="review">
+            <div class="review-item">
+                <div class="review-item-header">
+                    <img class="review-item-image" src="./assets/images/image-colton.jpg" alt="Colton Smith profile picture">
+                    <div class="review-item-text-container">
+                        <p class="review-item-name">Colton Smith</p>
+                        <p class="review-item-verified">Verified Buyer</p>
+                    </div>
                 </div>
+                <p class="review-item-text">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
             </div>
-            <p class="review-item-text">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
-        </div>
 
-        <div class="review-item">
-            <div class="review-item-header">
-                <img class="review-item-image" src="./assets/images/image-irene.jpg" alt="Colton Smith profile picture">
-                <div class="review-item-text-container">
-                    <p class="review-item-name">Irene Roberts</p>
-                    <p class="review-item-verified">Verified Buyer</p>
+            <div class="review-item">
+                <div class="review-item-header">
+                    <img class="review-item-image" src="./assets/images/image-irene.jpg" alt="Colton Smith profile picture">
+                    <div class="review-item-text-container">
+                        <p class="review-item-name">Irene Roberts</p>
+                        <p class="review-item-verified">Verified Buyer</p>
+                    </div>
                 </div>
+                <p class="review-item-text">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
             </div>
-            <p class="review-item-text">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
-        </div>
 
-        <div class="review-item">
-            <div class="review-item-header">
-                <img class="review-item-image" src="./assets/images/image-anne.jpg" alt="Colton Smith profile picture">
-                <div class="review-item-text-container">
-                    <p class="review-item-name">Anne Wallace</p>
-                    <p class="review-item-verified">Verified Buyer</p>
+            <div class="review-item">
+                <div class="review-item-header">
+                    <img class="review-item-image" src="./assets/images/image-anne.jpg" alt="Colton Smith profile picture">
+                    <div class="review-item-text-container">
+                        <p class="review-item-name">Anne Wallace</p>
+                        <p class="review-item-verified">Verified Buyer</p>
+                    </div>
                 </div>
+                <p class="review-item-text">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
             </div>
-            <p class="review-item-text">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
         </div>
     </div>
 
@@ -81,6 +81,20 @@
                 ratingContainer.prepend(img);
             } 
         })
+
+        const body = document.querySelector('body');
+
+        const backgroundTopSrc = './assets/images/bg-pattern-top-desktop.svg'
+        const topImg = document.createElement('img');
+        topImg.src = backgroundTopSrc;
+        topImg.classList.add('background-img-top');
+        body.prepend(topImg);
+
+        const backgroundBotSrc = './assets/images/bg-pattern-bottom-desktop.svg'
+        const botImg = document.createElement('img');
+        botImg.src = backgroundBotSrc;
+        botImg.classList.add('background-img-bottom');
+        body.append(botImg);
     </script>
 </body>
 </html>

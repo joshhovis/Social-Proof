@@ -11,6 +11,14 @@ text-align: center;
 color: hsl(303, 10%, 53%);
 }
 
+.background-img-top {
+    display: none;
+}
+
+.background-img-bottom {
+    display: none;
+}
+
 /* HEADER SECTION */
 .header-title {
     color: hsl(300, 43%, 22%);
@@ -85,4 +93,85 @@ color: hsl(303, 10%, 53%);
 .review-item-verified {
     color: hsl(333, 80%, 67%);
     margin: 0;
+}
+
+/* DESKTOP MEDIA QUERY STYLING */
+@media only screen and (min-width: 1024px) {
+    .body-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 100px;
+        height: 100%;
+    }
+
+    .background-img-top {
+        position: absolute;
+        left: 0;
+        display: block;
+    }
+
+    .background-img-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+    }
+
+    /* HEADER */
+    .header {
+        width: 40%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .header-title {
+        margin: 0;
+        width: 50%;
+        font-size: 36px;
+    }
+
+    .header-description {
+        width: 80%;
+    }
+
+    /* RATING */
+    .rating {
+        width: 40%;
+        margin: 0 auto
+    }
+
+    .rating-item {
+        position: relative;
+    }
+
+    .rating-item:nth-child(2) {
+        left: 30px;
+    }
+
+    .rating-item:nth-child(3) {
+        left: 60px;
+    }
+
+    /* REVIEW */
+    .review {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .review-item {
+        width: 25%;
+        height: 80%;
+        position: relative;
+        align-content: center;
+    }
+
+    .review-item:nth-child(2) {
+        top: 20px;
+    }
+
+    .review-item:nth-child(3) {
+        top: 40px;
+    }
 }
